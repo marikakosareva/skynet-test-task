@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: Helvetica,Roboto,Arial,sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.tarif-name {
+    color: #6fb316;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tarif-title{
+    text-align: center;
+    background: #f7f7f8;
+    box-shadow: 0 0.15rem 0.15rem 0 rgba(0,0,0,.2);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.tarif-title img {
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.content.page3 {
+    justify-content: center;
+}
+
+.tarif-block {
+    padding: 10px;
+}
+
+.tarif-block-content {
+    background-color: white;
+    #padding: 10px;
+    #margin: 10px;
+    box-shadow: 0 .15rem .15rem 0 rgba(0,0,0,.2);
+    #margin: 10px;
+    box-sizing: border-box;
+}
+
+.tarif-block-content > p,
+.tarif-block-content > div,
+.extra-info-content > p,
+.extra-info-content > div{
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+}
+
+.tarif-block-content .extra-info {
+    padding: 0 10px 0 0;
+}
+
+.tarif-block-content > p.info-box,
+.tarif-block-content > div.info-box{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.extra-info {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page3 .extra-info {
+    cursor: default;
+}
+
+.arrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-box img {
+    height: 12px;
+}
+
+hr {
+    margin: 0 10px;
+    height: 1px;
+    border: 0;
+    background-color: rgba(182, 182, 182, 0.48);
+}
+
+p.tarif-speed {
+    display: inline-block;
+    padding: 5px 8px 5px 10px ;
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.label-brown {
+    background-color: #70603e;
+}
+
+.label-blue {
+    background-color: #0075d9;
+}
+
+.label-red {
+    background-color: #e74807;
+}
+
+.options-list {
+    color: #4f595f;
+    font-size: 13px;
+}
+
+.tarif-price {
+    color: #4f595f;
+    font-size: 18px;
+}
+
+.tarif-price.details{
+    padding: 10px 5px 0 10px;
+}
+
+.options-list.activation-time {
+    color: #b2b2b2;
+}
+
+.site-link {
+    font-family: "Proxima Nova";
+    color: #0075d9;
+    font-size: 14px;
+    text-decoration: none
+}
+
+.tarif-select {
+    text-align: center;
+}
+
+.tarif-select a{
+    text-decoration: none ;
+    font-size: 13px;
+    color: white;
+    background: #6fb316;
+    display: block;
+    padding: 10px;
+}
+
+@media (max-width: 640px) {
+    .tarif-block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .tarif-block {
+        width: 50%;
+    }
+    .content.page3 .tarif-block {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarif-block {
+        width: 33.333%;
+    }
+    .content.page3 .tarif-block {
+        width: 50%;
+    }
+}
